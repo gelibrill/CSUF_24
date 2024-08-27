@@ -50,3 +50,8 @@ assert library --> error catch
 bit fields: O_WRONLY | O_CREAT | O_TRUNC | S_IRWXU
 ex: 1111 1111 --> can WR, CREAT, TRUNC, FULL ACCESS
     1111 0111 --> canNOT WR, can TRUNC, can FULL ACCESS
+
+HOMEWORK:
+    - real world coding and simulated world ( github projects )
+    - process_run.py, README.md in CPU_
+    - Ch. 4 ( SKIP Ch. 3 opt. reading )
