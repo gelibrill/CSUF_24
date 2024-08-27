@@ -1,3 +1,52 @@
 Week 1:
 08/26/24
 
+Operating Systems is a virtualized system.
+Virtualization:
+    - 
+Concurrency:
+    - splitting the work
+    - 
+Persistence:
+    - how files are represented in your system
+    - virtualized memory
+
+killall <program> --> ex: killall cpu
+
+Rust catches things in the compiler
+    - Will touch on Rust because it is great for creating Operating Systems
+
+To-Do:
+    - Read: Ch. 2 , Ch. 4 , Ch. 5
+    - Read: Ch. 6 , Ch. 7 , Ch. 8
+
+NOTICE: NO CLASS MONDAY SEPT 2 LABOR DAY
+
+-------
+
+What is an Operating System?
+- sits between the hardware and applications
+Top --> Bottom  Users || Applications || Operating System || hardware
+
+Harddrive different from SSD
+    - saving a file on a hard drive kind of works like a vending machine
+    - SSD has to erase an entire block to rewrite
+        - without backups, the data is lost forever
+
+OS provides ABSTRACTION
+CPU     --> process and/or thread
+Memonry --> address space
+Disk    --> files
+
+Virtualization: Make each program believe it has full access to all memory
+
+
+to run mem.c & cpu.c:
+1. clang <filename.c> -Wall -g -o <filename>
+2. ./filename
+
+assert library --> error catch
+
+bit fields: O_WRONLY | O_CREAT | O_TRUNC | S_IRWXU
+ex: 1111 1111 --> can WR, CREAT, TRUNC, FULL ACCESS
+    1111 0111 --> canNOT WR, can TRUNC, can FULL ACCESS
