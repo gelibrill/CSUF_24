@@ -1,0 +1,29 @@
+08/30/24
+
+Pseduocode: Method used to describe algorithms using a combination of natural language and high level programming constructs
+    - Outline for a program
+    - How code would work
+    - Natural language ( no syntax obligations )
+    - Recipe / Instructions for a computer program
+    
+    Needs:
+    - Conditional Statements ( integral part of your pseduocode )
+    1. Should be clear enough to be readable
+    2. Simplicity and concise
+    3. Flexibility
+
+Each algorithm must have an input and output statement or criteria.
+
+Example 1: Finding the Maximum Value in a List
+Input: A List of numbers ( L )
+Output: The maximum (greatest) number in the list ( L )
+
+Step 1: maxValue <- L[0]
+Step 2: for each number ( n ) in L, starting from the second element
+Step 3: if  n > maxValue then
+            maxValue <- n
+        end for
+        return maxValue
+
+.strip() --> removes extra spaces
+.lower() --> forces input to be lowercase
