@@ -27,3 +27,11 @@ Step 3: if  n > maxValue then
 
 .strip() --> removes extra spaces
 .lower() --> forces input to be lowercase
+
+https://algorithm-visualizer.org
+
+HW:
+Example 3: Linear Search for an element in a list
+Example 4: Bubble Sort Algorithm
+
+Write pseduocode for both and then write py script. Create a scenario for it.
