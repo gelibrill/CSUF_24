@@ -35,3 +35,66 @@ Example 3: Linear Search for an element in a list
 Example 4: Bubble Sort Algorithm
 
 Write pseduocode for both and then write py script. Create a scenario for it.
+
+---------------------------------------------------------------------------------
+09/06/24
+
+Efficiency of an Algorithm
+- Memory Usage
+    - how many times?
+- Exectution Time / O-notation
+    - how much time?
+- Scalability
+    - how big of an input/data size can it handle
+    - how long will it need it memory?
+- Reliability
+    - how it's being implimented
+    - how it's performing
+
+Exectution ( Big O notation ) time most important, Memory Usage second important
+
+Big O notation tells us how the runtime or memory usage of an algorithm grows relative to input size
+input size always denoted as " n "
+Purpose of Big O is to predict performance of an algorithm as " n " size grows.
+    - Alwyas gives us worst case scenario. Helps determine MAX time an algorithm might take.
+
+Typical Big O Notations:
+O(1) - Constant Time
+    - When algorithm takes the same amount of time regardless of input size. ( nearly does not exist in a practical world ) BEST case for any algo to work.
+O(log n) - Logarithmic Time
+    - Time grows slowly as the input size increases. Each step cuts the problem size in half.
+O(n) - Linear Time
+    - When time grows directly in proportion to the input size.
+O(n log n) - Linearithmic Time
+    - Merge Sort, Quick Sort
+O(n^2) - Quadratic Time
+    - When time grows proportional to square of input size. Perhaps inefficient algorithm for larger input sizes.
+        - Bubble sort, Insertion sort
+O(2^n) - Exponential Time
+    - When time doubles with each additional input. Extremely inefficient algorithm structure
+O(n!) - Factorial Time
+    - Time grows factorially. Traveling Salesman problem.
+
+
+Example: local library trying to organize books based on authors' names.
+O(1)    - like asking to grab the very first book you see. My time to travel, get book, give to you will always be the same.
+O(log n)    - Finding a book w a reference guide. like "In B, grab any book with an author that starts with "A" "
+O(n)    - Looking at each book one-by-one to find the book you need.
+O(n logn)   - organizing books through divide and conquer.
+O(n^2)  - comparing every book with every other book for sorting.
+O(2^n)  - reading every possible pair of books
+O(n!)   - arranging books in every possible order.
+
+https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/
+
+Intsertion Sorting Algorithm Pseduocode:
+
+Insertion(arr):
+# loop through each elem
+    for i from 1 to length(arr) do
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] > key do
+            arr[j+1] = arr[j]
+            j = j-1
+        arr[j+1] = key
