@@ -1,0 +1,21 @@
+09/07/24
+
+Requirement Analysis, Modeling, Specification
+
+Product Based vs Service Based
+    - Venmo is service based
+        - Service based allows for a lot of project growth, but not as much pay
+    - video games are product based
+        - not necessarily have a client.
+
+SW engineering vs SW process
+- engineering is the building
+- process is the steps taken and the scheduling and requirements
+    - iterative process: agile, waterfall, XP
+    - agile is good for flexible projects that are changing often
+    - waterfall for more linear process
+    - scrum breaking project down to mulit pieces
+    - kanban visualizing process
+
+check out kubernetes to see their SW process
+Docker concisex
