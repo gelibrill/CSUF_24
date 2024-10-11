@@ -19,3 +19,24 @@ SW engineering vs SW process
 
 check out kubernetes to see their SW process
 Docker concisex
+
+
+9/28
+Scrum Workflow
+TDD - test driven development test cases, then build the code to pass them
+Pair Programming - one is beginner, the other is explaining. Both are working and knowledge transfer. Junior and Senior in knowledge
+Continous Integration - writing code that is being tested automatically. If it is NOT AUTOMATIC, it is NOT Continous
+Sprint goal - 2 weeks (sprint) what you want to achieve
+
+10/5
+Midterm Oct 26
+Requirements: Input = user, Output = SRS (Software Requirements Specification)
+
+OOP vs Domain:
+OOP - classes, technique
+Domain - the entities and items within
+OOPS works really well from the user/usability perspective. It can be used one-on-one
+
+Class: Curriculum/Course
+Instance: Fall 24
+Function: Exam
