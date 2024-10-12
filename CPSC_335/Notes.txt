@@ -98,3 +98,80 @@ Insertion(arr):
             arr[j+1] = arr[j]
             j = j-1
         arr[j+1] = key
+
+10/11
+
+Graph:
+Graphs represent systems and their relationships. they allow us to solve complex relationships in algorithms
+
+- Vertices: finite set of objects ( also called nodes )
+- Edges: set of pairs of vertices, representing the connection between vertices
+    - have no connections, can be traversed both ways.
+
+example: with GPS, the starting point and destination are the vertices and the route is the edge.
+    - social networks use Graphs
+
+Types of Graphs:
+- Undirected: mutual understanding between two nodes. can be traversed both ways ( A to B and B to A )
+    - example: being mutual friends on social media to view each other's content.
+- Directed ( Digraph ): edges have relationships.
+    - example: if one user follows another, but the other does not follow back. Person A can view Person B's content without B needing to follow back.
+- Weighted: each edge will have a numerical value attached to it. value represents the cost/distance/quantitative relationships between nodes
+    - example: like a GPS. the route could be the time it takes from A to B or the distance. Route 1 could be long time, short distance. Route 2 could be a greater distance, but same time as route 1
+- Unweighted: same as Weighted, BUT has extra costs. ( distance, time, money )
+
+Key aspect of any problem to be modeled as a Graph is to NAVIGATE, SEARCH, or OPTIMIZE the relationships among systems.
+
+Terminology used frequently:
+1. Adjacent: two vertices that are connected by the same edge
+2. Path: edges and vertices on a route
+3. Cycle: start on a vertex and edges take you back to that vertex
+4. Degree of a Vertex: number of vertices connected to it
+5. Connected Graph: when any Undirected graph and there is a graph between every pair
+6. Subgraph: subset of any big graph ( think of Instagram graph )
+
+Key applications of Graph based models:
+1. Social Networking Apps/Platforms
+2. Internet/Web Crawling/Browsing
+3. Transportation/Navigation Systems
+4. Communication Networks ( routers, connections )
+
+Breadth-First Search Algorithm ( BSF )
+- Graph Traversal Algorithm for Unweighted Graphs
+    - Used for searching data, scheduling tasks, navigation maps
+    - implimented using Queue
+- Real World Applications:
+    - Shortest Path in an Unweighted Graph
+    - Web Crawlers
+    - Network Broadcasting ( like Amber Alert, broadcasts regardless of service provider & devide type )
+How it works:
+1. Initialization
+    - A Queue is initialized with starting node/vertex
+    - a list of visted nodes is maintained to avoid revisting the same nodes
+2. Exploration
+    - Dequeue the current node from the queue and mark it as visted
+    - Explore all of its unvisited neighbors.
+3. Termination
+    - The algorithm is terminated when queue becomes empty
+
+Depth-First Search Algorithm
+- Graph Traversal Algorithm, but does not need to be Unweighted Graph
+    - Dives deep into the graph for each branch before backtracking
+    - implimented recursively using Stack
+- Real World Applications:
+    - Cycle detection
+    - Solving Maze Problems
+    - Topological Sorting
+How it works:
+1. Initialization
+    - A STACK is initialized with starting node/vertex
+    - a list of visted nodes is maintained to avoid revisting the same nodes
+2. Exploration
+    - Pop current node from the stack, mark it as visited, and process it.
+    - Pull all unvisited nodes on the Stack and Repeat processing
+3. Termination
+    - The algorithm is terminated when stack becomes empty
+
+Exam:
+- Based on all the code done in the class, lecture notes, and the project we did
+- CLOSED BOOK, NO NOTES
