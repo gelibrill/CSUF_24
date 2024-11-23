@@ -175,3 +175,8 @@ How it works:
 Exam:
 - Based on all the code done in the class, lecture notes, and the project we did
 - CLOSED BOOK, NO NOTES
+
+11/22
+Knutch-Morris-Pratt Algorithm
+    - LPS ( Longest Prefix Suffix ) Array --> utilizes partial match table
+    - 
