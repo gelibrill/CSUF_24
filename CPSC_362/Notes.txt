@@ -41,4 +41,8 @@ Class: Curriculum/Course
 Instance: Fall 24
 Function: Exam
 
-10/12
+11/23
+Databases: recieve and retrieve data
+    - Uses query languages (SQL, PSQL, KQL)
+    - Transaction: the database SYSTEM is responsible for not having overlapping transactions from interruppting each other
+    
